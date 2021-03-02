@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas - Colspan e Rowspan</title>
+    <style>
+        table {
+            border: 1px solid;
+            border-spacing: 5px;
+            padding: 3px;
+        }
+        td, th {
+            border: 1px solid;
+            padding: 6px;
+        }
+        caption {
+            font-size: 15pt;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Catálogo da Metal & Cia</caption>
+        <!-- Cabeçalho -->
+        <tr>
+            <th style="text-align:right; color:aliceblue; background-color: #17997D;" colspan="4">Tabela de Preços</th>
+        </tr>
+        <!-- Segunda Linha -->
+        <tr>
+            <td rowspan="2">Seminovos</td>
+            <td>Trompete</td>
+            <td>Trobone</td>
+            <td>Trompa</td>
+        </tr>
+        <!-- Terceira Linha -->
+        <tr>
+            <td>R$ 500,00</td>
+            <td>R$ 640,00</td>
+            <td>R$ 650,00</td>
+        </tr>
+        <!-- Quarta Linha -->
+        <tr>
+            <td colspan="4">Visite nossa loja</td>
+        </tr>
+    </table>
+</body>
+</html>
