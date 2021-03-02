@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 03</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        form {
+            /* Center the form on the page */
+            margin: 0 auto;
+            width: 280px;
+            padding: 2em;
+            border: 1px solid rgb(97, 96, 96);
+            border-radius: 3em;
+        }
+        ul {
+            list-style: none;
+        }
+        form li + li {
+            margin-top: 0.3em;
+        }
+        label {
+            /* Uniform size & alignment */
+            display: inline-block;
+            width: 90px;
+            /* text-align: right; */
+        }
+        .button {
+            padding: 0.5em;
+            margin: 0.2em;
+            background-color: rebeccapurple;
+            color: white;
+        }    
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <h1>Entre com os dados para efetuar o seu Login</h1>
+        <ul>
+            <li><label for="login">Login</label><input type="text" name="login"></li>
+            <li><label for="password">Senha</label><input type="password" name="password"></li>
+            <li>&nbsp;</li>
+            <li>É seu primeiro acesso?</li>
+            <li><input type="radio" name="resposta" value="sim"> Sim</li>
+            <li><input type="radio" name="resposta" value="nao"> Não</li>
+            <li>&nbsp;</li>
+            <li><input class="button" type="submit" value="Enviar"> <input class="button" type="reset" value="Limpar"></li>
+        </ul>
+    </form>
+</body>
+</html>

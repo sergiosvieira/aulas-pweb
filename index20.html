@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 3</title>
+    <style>
+        #main { /* # => id */
+            margin: 0 auto;
+            width: 350px;
+        }
+        .text-center { /* . => class */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1 class="text-center">Banco do Brasil</h1>
+        <form method="get" action="">
+            <fieldset>
+                <legend>Preencha os dados abaixo para criar uma conta</legend>
+                <p>
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name">
+                </p>
+                <p>
+                    <label for="sex">Sexo</label>
+                    <select name="sex">
+                        <option value=""></option>
+                        <option value="m">Masculino</option>
+                        <option value="f">Feminino</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="type">Escolha uma das opções de conta:</label>
+                    <select name="type">
+                        <option value="cc">Conta Corrente</option>
+                        <option value="cp">Conta Poupança</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="credit_type">Escolha uma das opções de crédito do seu cartão bancário</label>
+                    <select name="credit_type" multiple>
+                        <option value="cardp">Cartão Premium</option>
+                        <option value="cardv">Cartão VIP</option>
+                        <option value="cards">Cartão Simples</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </fieldset>
+        </form>    
+    </div>
+</body>
+</html>
